@@ -64,6 +64,7 @@ h1 {
     color: #000; /* Text color */
     margin-top: -40vh; /* Adjust vertical margin */
     position: absolute;
+    animation: shake 0.5s ease-in-out; /* Apply the animation */
 }
 
 .janken-container {
@@ -141,3 +142,14 @@ footer {
     text-decoration: underline;
   }
   
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .animate-win {
+    animation: shake 0.5s ease-in-out;
+}

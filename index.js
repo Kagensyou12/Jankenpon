@@ -126,11 +126,15 @@ function determineWinner(choice1, choice2) {
         (choice1 === 'scissors' && choice2 === 'paper')
     ) {
         result = "Player 1 wins!";
+        document.getElementById("result").innerText = result;
+        document.getElementById("result").classList.add('animate-win'); // Add animation class
     } else {
         result = "Player 2 wins!";
+        document.getElementById("result").innerText = result;
+        document.getElementById("result").classList.add('animate-win'); // Add animation class
     }
-    document.getElementById("result").innerText = result;
 }
+
 
 function resetGame() {
     player1Choice = "";
