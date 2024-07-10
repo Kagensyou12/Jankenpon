@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jankenpon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <h1>Jankenpon</h1>
+      <div class="container">
+        <h1 id="result">Let's Play!</h1>
+        <div class="janken-container">
+          <div class="janken" onclick="playerChoose('rock', 1)">
+            <p>Rock</p>
+            <img class="imgRock" src="./images/rock.png" />
+          </div>
+          <div class="janken" onclick="playerChoose('paper', 1)">
+            <p>Paper</p>
+            <img class="imgPaper" src="./images/paper.png" />
+          </div>
+          <div class="janken" onclick="playerChoose('scissors', 1)">
+            <p>Scissors</p>
+            <img class="imgScissors" src="./images/scissors.png" />
+          </div>
+        </div>
+        <div class="btn-container">
+          <div class="btn">
+            <button onclick="startGame()">Let's go</button>
+          </div>
+          <div class="btn">
+            <button onclick="resetGame()">Reset Game</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>© 2024 Jankenpon Game. By Hadisurya</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/hadisurya/" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="mailto:hhadisurya01@gmail.com" target="_blank">Gmail</a>
+        <a href="https://www.instagram.com/hadisurya09/" target="_blank"
+          >Instagram</a
+        >
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

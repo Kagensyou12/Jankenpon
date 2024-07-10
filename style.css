@@ -1,0 +1,143 @@
+/* Reset margin and padding on body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(images/japan.jpg);
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0; /* Ensures no extra margins are pushing the content */
+    padding: 0; /* Ensures no extra padding is pushing the content */
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'tokyobold';
+    text-align: center;
+    font-size: 25rem; /* Adjust font size as needed */
+    margin-top: 20px;
+}
+
+@font-face {
+    font-family: 'tokyoshadow';
+    src: url('fonts/tokyo.woff2') format('woff2'),
+         url('fonts/tokyo.woff2') format('woff');
+}
+
+@font-face {
+    font-family: 'tokyobold';
+    src: url('fonts/tokyobold.woff2') format('woff2'),
+         url('fonts/tokyobold.woff2') format('woff');
+}
+
+@font-face {
+    font-family: 'tokyoregular';
+    src: url('fonts/tokyoregular.woff2') format('woff2'),
+         url('fonts/tokyoregular.woff2') format('woff');
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 60vh; /* Adjust height as needed */
+    text-align: center; /* Center text within container */
+}
+
+#result {
+    font-family: 'tokyoregular', sans-serif; /* Apply font to paragraph */
+    font-size: 20rem; /* Adjust font size as needed */
+    color: #000; /* Text color */
+    margin-top: -40vh; /* Adjust vertical margin */
+    position: absolute;
+}
+
+.janken-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    margin: 50px 0; /* Add spacing between items and button */
+    margin-bottom: 30px;
+}
+
+.janken {
+    text-align: center;
+    margin: 0 100px; /* Add spacing between items */
+}
+
+.janken p {
+    font-family: 'tokyobold', sans-serif; /* Apply font to paragraph */
+    font-size: 10rem; /* Adjust font size as needed */
+    color: #000; /* Text color */
+    margin-bottom: 20px;
+}
+
+.janken img {
+    width: 30cm; /* Adjust image size as needed */
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Add space between buttons */
+    margin-top: 20px; /* Add margin above the buttons */
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn-container button {
+    font-family: 'tokyoregular', sans-serif; /* Apply font to button */
+    width: 60rem;
+    height: 15rem;
+    font-size: 10rem; /* Adjust font size as needed */
+    padding: 20px 10px; /* Adjust padding for a larger button */
+    margin: 0; /* Ensure no extra margins affect the buttons */
+    cursor: pointer; /* Change cursor to pointer when hovering over button */
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text horizontally */
+    padding: 40px 0; /* Increased vertical padding */
+    font-family: 'tokyoregular', sans-serif; /* Apply font to footer */
+    font-size: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
